@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Time Calculator</title>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="calculator">
+            <h1 class="header">Calculate Time Interval</h1>
+            <label for="date1" class="date">Select First Date:</label>
+            <input type="date" id="date1" class = 'date-input' >
+            <label for="date2" class="date">Select Second Date:</label>
+            <input type="date" id="date2" class ='date-input'  disabled>
+        </div>
+        <div class="selectors">
+            <div class="selectors__selector"> 
+                <label class="selectors__label" for="time-interval">Time interval:</label>
+                <select class="selectors__select" id="time-interval" disabled>
+                  <option value="custom">Custom</option>
+                  <option value="week">Week</option>
+                  <option value="month">Month</option>
+                </select>
+            </div>
+            <div class="selectors__selector">
+                 <label class="selectors__label" for="days-option">Days:</label>
+            <select class="selectors__select" id="days-option" disabled>
+              <option value="all">All days</option>
+              <option value="weekdays">Weekdays</option>
+              <option value="weekends">Weekends</option>
+            </select> 
+            </div>
+            <div class="selectors__selector">
+                <label class="selectors__label" for="calc-option">Calculate:</label>
+            <select class="selectors__select" id="calc-option" disabled>
+              <option value="days">Number of days</option>
+              <option value="hours">Number of hours</option>
+              <option value="minutes">Number of minutes</option>
+              <option value="seconds">Number of seconds</option>
+            </select> 
+            </div>
+          </div> 
+          
+          <button class="  cybr-btn"  disabled>Calculate <span aria-hidden>_</span>
+            <span aria-hidden class="cybr-btn__glitch">Calculated</span>
+            <span aria-hidden class="cybr-btn__tag">A.M</span>
+          </button>
+ 
+        <div class="results">
+            <h2 class="results__head">Last  10  Results</h2>
+            <table id="results__table">
+              <thead>
+                <tr class="table-head-row">
+                  <th class="table-headers">Start Date</th>
+                  <th class="table-headers">End Date</th>
+                  <th class="table-headers">Result</th>
+                </tr>
+              </thead>
+              <tbody id="results__item">
+              </tbody>
+            </table>
+          </div>
+
+          
+	
+</div>
+
+    <script src="..//JavaScript/index.js"></script>
+</body>
+</html>
